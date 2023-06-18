@@ -9,8 +9,9 @@
 # 이승준 🍎 <br>
 임병구 <br>
 김찬형 <br>
-# 이용우 *King*김건섭😇 <br>
-박믿음 <br>
+# 이용우 dyddn1001@naver.com <br>
+*King*김건섭😇 <br>
+박믿음🤯 <br>
 윤혜빈<br>
 박재형<br>
 윤진영<br>
