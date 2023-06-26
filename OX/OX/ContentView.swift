@@ -11,6 +11,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var countCorrect: Int = 0
+    @State var countWrong: Int = 0
+    
     var body: some View {
         VStack {
             
@@ -26,8 +30,8 @@ struct ContentView: View {
                     
                 } label: {
                     Text("오")
-            }
-                    
+                }
+                
                 Button {
                     
                 } label: {
@@ -39,9 +43,15 @@ struct ContentView: View {
             
             Spacer()
             
-            }
         }
     }
+    // "오" 버튼을 눌렀을 때 count + 1
+    // 멋진 함수 부탁해요 ~!
+    func selectCorrect() {
+        countCorrect += 1
+    }
+    
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
