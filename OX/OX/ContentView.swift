@@ -5,7 +5,6 @@
 //  Created by Aiden Park on 2023/06/26.
 //
 
-// 용우님! 30분까지 OX 마무리 해주세요 마감시간 지켜주세요.
 
 
 import SwiftUI
@@ -30,6 +29,10 @@ struct ContentView: View {
             
             Spacer()
             
+            Text("\(number1) \u{D7} \(number2) = \(resultNumber)" )
+            
+            Spacer()
+
             HStack {
                 Button {
                     
@@ -50,9 +53,18 @@ struct ContentView: View {
             
         }
     }
-    // "오" 버튼을 눌렀을 때 count + 1
-    // 멋진 함수 부탁해요 ~!
     
+    
+    // 숫자 랜덤 뽑는 함수
+    // 이걸 활용해서 초기화 버튼(숫자가 새로 생성되도록)을 만들어 주세요
+    func randomNumber() {
+        print("restart")
+        
+        number1 = Int.random(in: 0...10)
+        number2 = Int.random(in: 0...10)
+
+        
+    }
     // O버튼 눌렀을 때 카운트 함수
     func selectCorrect() {
         if number1 * number2 == resultNumber{
@@ -70,7 +82,7 @@ struct ContentView: View {
             countCorrect += 1
         }
     }
-    
+        
 }
 
 struct ContentView_Previews: PreviewProvider {
