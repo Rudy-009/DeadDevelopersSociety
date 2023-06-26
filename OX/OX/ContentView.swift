@@ -12,6 +12,11 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @State var number1: Int = 0
+    @State var number2: Int = 0
+    @State var resultNumber: Int = 0
+    
+    
     @State var countCorrect: Int = 0
     @State var countWrong: Int = 0
     
@@ -29,13 +34,13 @@ struct ContentView: View {
                 Button {
                     
                 } label: {
-                    Text("오")
+                    Text("O")
                 }
                 
                 Button {
                     
                 } label: {
-                    Text("엑스")
+                    Text("X")
                 }
             }
             
@@ -47,8 +52,23 @@ struct ContentView: View {
     }
     // "오" 버튼을 눌렀을 때 count + 1
     // 멋진 함수 부탁해요 ~!
+    
+    // O버튼 눌렀을 때 카운트 함수
     func selectCorrect() {
-        countCorrect += 1
+        if number1 * number2 == resultNumber{
+            countCorrect += 1
+        }else {
+            countWrong += 1
+        }
+    }
+    
+    // X버튼 눌렀을 때 카운트 함수
+    func selectWrong() {
+        if number1 * number2 == resultNumber{
+            countWrong += 1
+        }else {
+            countCorrect += 1
+        }
     }
     
 }
